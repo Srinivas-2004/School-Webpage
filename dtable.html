@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height:200px;
+            width:200px;
+            transition:all 0.4s ease-in;
+        }
+        img:hover{
+            width:250px;
+            height:250px;
+        }
+
+	#trial{
+position:relative;
+top:800px}
+	#trial2{
+position:relative;
+top:800px}
+
+marquee{
+position:relative;
+top:800px
+}
+    </style>
+</head>
+<body style="background:url('group.jpeg');background-size:cover">
+    <table cellspacing="8px" border="1" style="position:absolute;right:6cm;top:3cm;border:solid black">
+        <tr>
+            <th>TVS Krishna Murthy</th>
+            <th>Nihal</th>
+            <th>Yegnessh</th>
+            <th>Goutham</th>
+            <th>Srinivas</th>
+            <th>Venkatesh</th>
+        </tr>
+        <tr>
+        <td><img src="Superman.jpg"/></td>
+        <td><img src="Batman.webp"></td>
+        <td><img src="Aquaman.jpg"></td>
+        <td><img src="Flash.jpg"></td>
+        <td><img src="Green Arrow.jpg"></td>
+        <td><img src="Cyborg.webp"></td>
+        </tr>
+    </table>
+<input type="button" id="trial" onclick="bchange(1)" value="Homepage" style="font-size:20px;color:white;background-color:salmon;width:110px;height:35px" />
+<input id="trial2" type="button" onclick="bchange(2)" value="Faculty" style="font-size:20px;color:white;background-color:salmon;width:220px;height:35px;float:right" />
+<footer>
+<marquee><h1 style="color:white">Happy Valley High School</h1></marquee>
+</footer>
+<script>
+function bchange(sw) {
+if(sw==1) {
+window.open("index.html");
+}
+if(sw==2) {
+window.open("faculty.html");
+}
+}
+</script>
+</body>
+</html>

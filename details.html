@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+<title>Faculty</title>
+</head>
+<body>
+<center><span style="font-size:100px;color:#292929">Faculty</span><img src="faculty.jpg" width="126" height="121"></center>
+<br/>
+<br/>
+<br/>
+<p id="para1" onmouseover="cchange(1)" onmouseout="cchange(0)" style="font-size:35px"><img src="fac1.jpg" width="400" height="210" align="left">The Faculty aims at preparing dedicated, skilled, knowledgeable and creative quality teachers possessing high standards of professional ethics to stand up to the evolving demands of the educational system and the society at large.</p><br/><br/><p id="para2" onmouseover="cchange(3)" onmouseout="cchange(2)" style="font-size:35px"><img src="fac.png" align="right">The Faculty also aims at preparing quality teacher educators who perform complex duties ranging from effective classroom teaching to moulding the value system of pupils and undertaking administrative responsibilities with sincerity. It thus prepares teacher educators and researchers to play a leading role in their profession.</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<center>
+<u style="font-size:75px;color:green">Subjects</u>
+<center><p style="font-size:20px;color:red">To know the faculty, please click on the respective subjects.</p></center>
+<table>
+<tr>
+<td>
+<a href="telugu.html"><img id="photo1" onmouseover="cchange(5)" onmouseout="cchange(4)" src="1lan.png"></a>
+</td>
+<td>
+<a href="hindi.html"><img id="photo2" onmouseover="cchange(7)" onmouseout="cchange(6)" src="hindi.jpeg"></a>
+</td>
+<td>
+<a href="english.html"><img src="eng.jpg" width="400" height="258"></a>
+</td>
+<tr>
+<td>
+<a href="maths.html"><img id="photo4" onmouseover="cchange(11)" onmouseout="cchange(10)" src="maths.png"></a>
+</td>
+<td>
+<a href="science.html"><center><img id="photo5" onmouseover="cchange(13)" onmouseout="cchange(12)" src="science.png" width="300" height="300"></center></a>
+</td>
+<td>
+<a href="social.html"><center><img id="photo6" onmouseover="cchange(15)" onmouseout="cchange(14)" src="soc3.png" width="341.5" height="341.5"></center></a>
+</td>
+</tr>
+</table></center>
+<script>
+function cchange(sw) {
+if(sw==1) {
+document.getElementById("para1").style.color="white";
+document.getElementById("para1").style.backgroundColor="rgb(220,20,60)";
+}
+else if(sw==3) {
+document.getElementById("para2").style.color="white";
+document.getElementById("para2").style.backgroundColor="#292929";
+}
+else if(sw==0) {
+document.getElementById("para1").style.backgroundColor="";
+document.getElementById("para1").style.color="";
+
+}
+else if(sw==2) {
+document.getElementById("para2").style.backgroundColor="";
+document.getElementById("para2").style.color="";
+}
+else if(sw==15) {
+document.getElementById("photo6").style.backgroundColor="rgb(41,41,41,0.4)";
+}
+else if(sw==14) {
+document.getElementById("photo6").style.backgroundColor="";
+}
+else if(sw==13) {
+document.getElementById("photo5").style.backgroundColor="rgb(0,0,139,0.4)";
+}
+else if(sw==12) {
+document.getElementById("photo5").style.backgroundColor="";
+}
+else if(sw==11) {
+document.getElementById("photo4").style.backgroundColor="rgb(0,139,139,0.6)";
+}
+else if(sw==10) {
+document.getElementById("photo4").style.backgroundColor="";
+}
+else if(sw==7) {
+document.getElementById("photo2").style.backgroundColor="rgb(255,255,0,0.4)";
+}
+else if(sw==6) {
+document.getElementById("photo2").style.backgroundColor="";
+}
+else if(sw==5) {
+document.getElementById("photo1").style.backgroundColor="rgb(184,134,11,0.4)";
+}
+else if(sw==4) {
+document.getElementById("photo1").style.backgroundColor="";
+}
+}
+</script>
+<input type="button" id="trial" onclick="bchange(1)" value="Go to Homepage" style="font-size:20px;color:white;background-color:rgb(41,41,41)" />
+<input type="button" onclick="bchange(2)" value="Classroom Experience" style="font-size:20px;color:white;background-color:rgb(41,41,41);width:220px;height:35px;float:right" />
+<footer>
+<marquee><h1>Happy Valley High School</h1></marquee>
+</footer>
+<script>
+function bchange(sw) {
+if(sw==1) {
+location.href="index.html";
+}
+if(sw==2) {
+location.href="classroom.html";
+}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!doctype HTML>
+<html>
+
+<HEAD>
+    <style>
+        table {
+            WIDTH: 100%;
+        }
+    </style>
+
+    <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["a"].value;
+            if (x == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+
+
+            var y = document.forms["myForm"]["d"].value;
+            if (y == "") {
+                alert("Roll no must be filled out");
+                return false;
+            }
+
+
+            var z = document.forms["myForm"]["g"].value;
+            if (z == "") {
+                alert("Email must be filled out");
+                return false;
+            }
+
+            var a = document.forms["myForm"]["Z"].value;
+            if (a == null ){
+                alert("Please select any one domain");
+            }
+
+            else {
+                window.open("CD.html");
+            }
+        }
+        
+    </script>
+
+</HEAD>
+<h1 align="center">
+    COURSES APPLICATION
+</h1>
+
+<BODY style="background-color: rgb(254, 255, 196)">
+    <form name="myForm" onsubmit="validateForm()">
+        <TABLE cellpadding="10" style="background-color: rgb(0, 255, 213)">
+            <tr>
+
+                <TD>
+                    NAME :
+
+                </TD>
+                <TD>
+                    <input type="text" name="a" placeholder="Enter you Name" required>
+                </TD>
+            </tr>
+            <TR>
+                <TD>
+                    CLASS :
+                </TD>
+                <TD>
+                    <SELECT NAME="B" required>
+                        <OPTION value="1">1</OPTION>
+                        <OPTION value="2">2</OPTION>
+                        <OPTION value="3">3</OPTION>
+                        <OPTION value="4">4</OPTION>
+                        <OPTION value="5">5</OPTION>
+                        <OPTION value="6">6</OPTION>
+                        <OPTION value="7">7</OPTION>
+                        <OPTION value="8">8</OPTION>
+                        <OPTION value="9">9</OPTION>
+                        <OPTION value="10">10</OPTION>
+                </TD>
+            </TR>
+            <TR>
+                <TD>
+                    SECTION :
+                </TD>
+                <TD>
+                    <SELECT NAME="C" required>
+                        <OPTION value="1">A</OPTION>
+                        <OPTION value="2">B</OPTION>
+                        <OPTION value="3">C</OPTION>
+                </TD>
+            </TR>
+
+
+            <TR>
+                <TD>
+                    ROLL NO. :
+                </TD>
+                <TD>
+                    <input type="text" name="d" placeholder="Enter your Roll" required>
+                </TD>
+            </TR>
+            <tr>
+                <td>
+                    EMAIL ID :
+                </td>
+                <td>
+                    <input type="text" name="g" placeholder="Enter your Email" required>
+                    @
+                    <SELECT NAME="Z" required>
+                        <OPTION value="1">gmail.com</OPTION>
+                        <OPTION value="2">ymail.com</OPTION>
+                        <OPTION value="3">outlook.com</OPTION>
+                        <OPTION value="4">hotmail.com</OPTION>
+                        <OPTION value="5">rediff.com</OPTION>
+                </td>
+                <td></td>
+            </tr>
+
+            <TR>
+                <TD>
+                    COURSES :
+                </TD>
+                <td>
+                    <INPUT TYPE="CHECKBOX" NAME="n" VALUE="D" />
+                    Jr Computer Science
+                    <INPUT TYPE="CHECKBOX" NAME="o" VALUE="D" />
+                    Jr Business Studies
+                    <INPUT TYPE="CHECKBOX" NAME="p" VALUE="D" />
+                    Jr Media and Journalism
+                    <INPUT TYPE="CHECKBOX" NAME="q" VALUE="D" />
+                    Jr Arts and Humanities
+                    <INPUT TYPE="CHECKBOX" NAME="r" VALUE="D" />
+                    Jr Medical Science
+
+                </td>
+            </TR>
+            <tr>
+                <td>
+                    <button> <a href="index.html">Go Back to HomePage</a></button>
+                </td>
+                <td> <input type="submit" value="Save and Proceed"></td>
+            </tr>
+
+        </TABLE>
+    </form>
+    <TABLE>
+
+        <TR>
+            <Td>
+                <h2>IMPORTANCE OF PARTICIPATING IN THESE COURSES :<BR></h2>
+                <i> Our journey towards innovation and universality is incessant. In pursuing it, the Olympiad programme
+                    insists on e-projects where the use of computers compliments regular education to a new high.
+                    Students are assigned these projects wherein the purpose of research and presentation is driven by
+                    topics of personal interest. They help in inculcating scientific temper and zeal for constant
+                    learning while developing team spirit and co-ordination at work.</i>
+            </TD>
+            <td>
+                <img src="int.jpg" align="right" width="300px" height=AUTO>
+
+            </td>
+
+        </TR>
+
+    </TABLE>
+
+</BODY>
+
+
+</html>
